@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Galaxy</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Texturina:wght@400;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="fluid-container ">
+        
+          
+            <header>
+                <div class="logo"><img src="./cakeLogo.jpg" alt="cakeLogo"></div>
+                <div class="title"><h1>Cake Galaxy</h1></div>
+                <div class="cart1">
+                          
+                          
+                  <button class="btn btn-success" id="cart" style="height: 30px;width: 30px; border-radius: 50%;" onclick="addCart()"></button>
+                  <div class="bi bi-basket" style="font-size:60px" ></div>
+                </div>
+                
+            </header>
+          <div class="sticky-top">
+            <div class="d-flex bd-highlight">
+              <div class=" w-100 bd-highlight">
+                <nav class="navbar navbar-dark bg-dark ">
+                  <ul class="nav">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#2" >Cakes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#3" >Cart</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#4" >Contact us</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </nav>
+                
+              </div>
+              
+            </div>
+          </div>  
+               <section id="1">
+               <div class="home">
+                    <div class="home__data">
+                        <h2 style="text-align: center;color: whitesmoke;">Home</h2>
+                        <br><br>
+                        <h1 class="home__tittle">Hi,<br>Welcome to <br> <span class="home_title_color">Cake Galaxy</span><br><span
+                          class="fadeIn"></span></h1>
+                    </div>
+                               <br><br><br>
+                  </div>
+               </section>
+               <section id="2">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h1>Cakes, Cupcakes and doughnut</h1>
+                </div>
+                <div id="layout" class="container">
+                  <div class="row" id="layoutRowId"></div>
+                </div>
+              </section>
+              <section id="3">
+                <h2 class="d-flex justify-content-center">Add To Cart</h2>
+                <div class="container mb-5 d-flex justify-content-center">
+                  
+                    
+                 
+                  
+                   <div class="col-4 order m-3 j" id="target">
+                    <h4 class="m-3">Total order</h4>
+                    <div class="d-flex flex-row">
+                      <input type="text" class="form-control m-2" placeholder="promocode" >
+                      <button class="btn btn-primary m-2">Apply</button>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between m-2" >
+                      <span class="billing-items">Items</span>
+                      <span class="billing-cost"><input type="text"  class="form-control" placeholder="0" readonly ></span>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between m-2" >
+                      <span class="billing-items">Shipping</span>
+                      <span class="billing-cost"><input type="text"  class="form-control" placeholder="0" readonly></span>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between m-2">
+                      <span class="billing-items">Discount</span>
+                      <span class="billing-cost"><input type="text"  class="form-control" placeholder="0" readonly></span>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between m-2">
+                      <span class="billing-items fs-5">Total</span>
+                      <span class="billing-cost fs-5"><input type="text"  class="form-control" placeholder="0" readonly></span>
+                    </div>
+                    <div class="d-flex m-3">
+                      <button class="btn btn-primary flex-grow-1">Pay Now</button>
+                    </div>
+
+
+
+                   </div>
+
+                 </div>
+                </div>
+                </section>
+                  <br>
+                  <section id="4">
+                    <h2 style="text-align: center;">Contact us</h2>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                
+                
+                  <footer>
+                    
+                    <p>All Rights Are Reserved</p>
+                    <p>Design @Shubham Karad <i class="bi bi-heart"></i></p>
+
+                      <div class="footercontact">
+                        
+                      <div ><a href="callto:7397847916" class="bi bi-phone" id="a" ></a> </div>
+                      <div ><a href="mailto:shubham.karad12@gmail.com" class="bi bi-envelope" id="a"></a> </div>
+                      <div ><a href="https://www.instagram.com/the_shubham12/"class="bi bi-instagram" id="a"></a></div>
+                      <div ><a href="https://github.com/Shubhamkarad121197" class="bi bi-github" id="a" ></a> </div>
+                      <div ><a href="https://www.facebook.com/shubham.karad.712/" class="bi bi-facebook" id="a" ></a> </div>
+                      <div ><a href="https://twitter.com/the_shubh12am" class="bi bi-twitter" id="a" ></a> </div>
+                      
+                      </div>
+                 
+                  </footer>
+
+                    
+        
+    </div>
+
+  <script src="./cake.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</body>
+</html>

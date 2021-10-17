@@ -1,0 +1,131 @@
+
+*{
+    margin:0px;
+    padding: 0px;
+    text-decoration: None;
+    list-style: none;
+    
+    
+}
+#a{
+    text-decoration:none;
+    color: white;
+    font-size: 34px;
+    
+}
+body{
+    
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color:rgb(184, 22, 49);
+}
+.logo>img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.title{
+    font-family: 'Texturina', serif;
+    color: whitesmoke;
+    font-weight: bolder;
+
+}
+
+.home{
+    
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    
+    height:530px;
+    width: 100%;
+    background-size: cover;
+    
+    
+}
+
+.home__tittle{
+    font-family: 'Ephesis', cursive;
+    font-size: 70px;
+    font-weight: bolder;
+    color: white;
+    margin-left: 5%;
+    text-shadow: 2px 3px gray;
+    
+}
+
+
+.fadeIn::before{
+    content: "";
+    transition: 3s;
+    animation: animate  6s linear  infinite;
+   
+    
+    
+  }
+
+
+
+
+  @keyframes animate{
+      0%{
+         content:" Very Fresh 😀";
+         
+      }
+      25%{
+         content: " Most Delicious 😋";
+      }
+      50%{
+         content:" So Beautiful 🥰";
+      }
+      75%{
+         content: "Eggless  👌🏽";
+      }
+      100%{
+          content:"Cakes 🍰";
+      }
+  }
+
+.cart-item{
+    display: flex;
+    border: 1px solid grey;
+}
+.contact{
+    
+    color:white;
+}
+.cart1{
+    display: flex;
+    justify-content: end;
+    
+
+}
+.order{
+    border: 1px solid grey;
+}
+.close{
+    font-size: 24px;
+}
+.close :hover {
+    
+    color:red;
+}
+
+footer{
+    text-align: center;
+    color:white;
+    background-color: black;
+    
+}
+.footercontact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
